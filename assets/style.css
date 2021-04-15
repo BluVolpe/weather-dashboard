@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 header {
     text-align: center;
     background-color: darkslategray;
     color: white;
     padding-top: 3px;
     padding-bottom: 3px;
+=======
+header {
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+>>>>>>> b88f6d7b7e0684aa4dd569e6a35d6284fac4999a
 }
