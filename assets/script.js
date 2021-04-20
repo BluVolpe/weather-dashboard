@@ -41,20 +41,26 @@ function getCurrentWeather(searchValue, addToHistory) {
             console.log()
             // TODO append content to the DOM either right here or with a function
             // TODO call five day forecast and UV index
-
-            let queryUrltwo = "https://api.openweathermap.org/data/2.5/onecall?lat=" + data.coord.lat + "&lon=" + data.coord.lon + "&exclude=current, minutely, hourly, alerts&appid=" + apiKey2 + "&units=imperial";
+            getForecast(data.coord.lat, data.coord.lon);
         });
 }
 
+    function getForecast(lat, lon){
+        console.log(lat, lon)
+        let queryUrltwo = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&exclude=current, minutely, hourly, alerts&appid=" + apiKey2 + "&units=imperial";
 
 
         fetch(queryUrltwo)
-            .then(function (response) {
-                return response.json();
-            }).then(function (data) {
-                console.log(data.daily.morn)
-                
-            })
+        .then(function (response) {
+            return response.json();
+        }).then(function (data) {
+            console.log(data);
+            
+        });
+
+
+    }
+
 // presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
 
 
