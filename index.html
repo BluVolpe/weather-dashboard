@@ -25,23 +25,26 @@
         <div class="container-fluid">
             <br>
             <div class="row">
-                <aside class="col-sm-4">
+                <aside class="col-sm-2">
                     
                     <h5 class="mt-1">Search for a City:</h5>
                     <div class="form-inline form-group">
-                        <input type="text" class="form-control" id="search-value">
-                        <button class="btn btn-primary" id="search-button">
+                        <input type="text" class="form-control" id="search-value" style="width: 95%;">
+                        
+                        <button class="btn btn-primary" id="search-button" style="margin-left: 1%; margin-top: 3px;">
                             <i class="fa fa-search"></i>
                             Search
                         </button>
+                        
                     </div>
                     <div id="searchHistory"></div>
                 </aside>
 
-                <section class="col-sm-8">
+                <section class="col-sm-9">
                     
                     <!-- Todays weather -->
-                    <div>
+                    <div class="todaysWeather">
+                        <h3 id="todaysDate"></h3>
                         <h1 id="cityHeading" style="padding-bottom: 10px;"></h1>
                         <p id="temperature"></p>
                         <p id="wind"></p>
@@ -49,12 +52,42 @@
                         <p id="uv"></p>
                     </div>
                     <!-- 5 day forecast cards -->
-                    <div class="row">
-                        <div class="col-md-2">1</div>
-                        <div class="col-md-2">2</div>
-                        <div class="col-md-2">3</div>
-                        <div class="col-md-2">4</div>
-                        <div class="col-md-2">5</div>
+                    <div class="row" id=fiveDay>
+                        <div class="col-md-2">
+                            <h4 id="date1" style="padding-bottom: 10px;"></h4>
+                            <h1 class="dailyCardHeader1"></h1>
+                            <p id="temp1"></p>
+                            <p id="wind1"></p>
+                            <p id="humid1"></p>
+                        </div>
+                        <div class="col-md-2">
+                            <h4 id="date2" style="padding-bottom: 10px;"></h4>
+                            <h1 class="dailyCardHeader1"></h1>
+                            <p id="temp2"></p>
+                            <p id="wind2"></p>
+                            <p id="humid2"></p>
+                        </div>
+                        <div class="col-md-2">
+                            <h4 id="date3" style="padding-bottom: 10px;"></h4>
+                            <h1 class="dailyCardHeader1"></h1>
+                            <p id="temp3"></p>
+                            <p id="wind3"></p>
+                            <p id="humid3"></p>
+                        </div>
+                        <div class="col-md-2">
+                            <h4 id="date4" style="padding-bottom: 10px;"></h4>
+                            <h1 class="dailyCardHeader1"></h1>
+                            <p id="temp4"></p>
+                            <p id="wind4"></p>
+                            <p id="humid4"></p>
+                        </div>
+                        <div class="col-md-2">
+                            <h4 id="date5" style="padding-bottom: 10px;"></h4>
+                            <h1 class="dailyCardHeader1"></h1>
+                            <p id="temp5"></p>
+                            <p id="wind5"></p>
+                            <p id="humid5"></p>
+                        </div>
                     </div>
                     <!-- ROW 2 ENDS -->
                 </section>
@@ -62,6 +95,7 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="./assets/moment.js"></script>
         <script src="./assets/script.js"></script>
     </body>
     <footer class="footer" style="text-align: center;">Made by Blu VIII</footer>
