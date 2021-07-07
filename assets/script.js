@@ -90,11 +90,11 @@ function getCurrentWeather(searchValue, addToHistory) {
                 $("#wind4").text("Wind: " + data.daily[4].wind_speed + " MPH");
                 $("#wind5").text("Wind: " + data.daily[5].wind_speed + " MPH");
 
-                $("#humid1").text("Humidity: " + data.daily[1].humidity + "%");
-                $("#humid2").text("Humidity: " + data.daily[2].humidity + "%");
-                $("#humid3").text("Humidity: " + data.daily[3].humidity + "%");
-                $("#humid4").text("Humidity: " + data.daily[4].humidity + "%");
-                $("#humid5").text("Humidity: " + data.daily[5].humidity + "%");
+                $("#humid1").text("Humidity: " + data.daily[1].humidity);
+                $("#humid2").text("Humidity: " + data.daily[2].humidity);
+                $("#humid3").text("Humidity: " + data.daily[3].humidity);
+                $("#humid4").text("Humidity: " + data.daily[4].humidity);
+                $("#humid5").text("Humidity: " + data.daily[5].humidity);
             });
     
     
